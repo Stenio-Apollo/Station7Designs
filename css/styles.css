@@ -8,6 +8,7 @@
   --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px;
+  --color-content: rgb(250, 244, 235);
 }
 
 *,
@@ -190,6 +191,9 @@ a {
 .icon--white {
   fill: #fff;
 }
+.icon--chevron {
+  fill: var(--color-secondary);
+}
 .icon--accent {
   fill: #575757;
 }
@@ -253,9 +257,16 @@ a {
   background: var(--color-accent);
   color: #fff;
 }
-
+.btn--black {
+  background: black;
+  color: #ffff ;
+}
 .btn--accent:hover {
   background: #ec3000;
+
+}
+.btn--black:hover {
+   background: #ec3000;
 }
 
 .btn--outline {
@@ -289,8 +300,8 @@ a {
 
 .input {
   border-radius: var(--border-radius);
-  border: 1px solid var(--color-border);
-  color: var(--color-headings);
+  border: 1px solid black;
+  color: black;
   font-size: 2rem;
   outline: 0;
   padding: 1.5rem 3.5rem;
@@ -301,7 +312,7 @@ a {
 }
 
 .input-group {
-  border: 1px solid var(--color-border);
+  border: 1px var(--color-border);
   border-radius: var(--border-radius);
   display: flex;
 }
@@ -516,7 +527,6 @@ a {
   }
 }
 
-
 /* Testimonials */
 
 .testimonial {
@@ -629,6 +639,9 @@ a {
   --padding-vertical: 5rem;
   padding: var(--padding-vertical) 2rem;
 }
+.block-accent {
+  background-color: var(--color-content);
+}
 
 .block__header {
   text-align: center;
@@ -668,7 +681,7 @@ a {
 /* Navigation Bar */
 
 .nav {
-  background: var(--color-primary);
+  background: rgb(255, 244, 228);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -756,7 +769,7 @@ a {
 /* Domain Block */
 
 .block-domain .input-group {
-  box-shadow: 0 0 30px 20px #e6ebee;
+  box-shadow: 0 0 50px 3px #e6ebee;
   border: 0;
   margin: 4rem auto;
   max-width: 670px;
