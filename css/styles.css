@@ -1,16 +1,18 @@
 @import "./normalize.css";
 :root {
   --color-primary: rgb(249, 247, 239);
-  --color-secondary:#42cbf5 ;
+  --color-secondary: #42cbf5;
   --color-accent: #fc6f6f;
-  --color-headings: rgb(98, 119, 138) ;
+  --color-headings: rgb(98, 119, 138);
   --color-body: #918ca4;
   --color-body-darker: #5c5577;
   --color-border: #ccc;
   --border-radius: 30px;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
 }
 
@@ -36,7 +38,9 @@ body {
   color: var(--color-body);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--color-headings);
   margin-bottom: 1rem;
   line-height: 1.1;
@@ -186,6 +190,9 @@ a {
 .icon--white {
   fill: #fff;
 }
+.icon--accent {
+  fill: #575757;
+}
 
 .icon-container {
   background: #f3f9fa;
@@ -324,7 +331,8 @@ a {
   overflow: hidden;
 }
 
-.card__header, .card__body {
+.card__header,
+.card__body {
   padding: 2rem 7%;
 }
 
@@ -497,6 +505,9 @@ a {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+  .Home {
+    padding-right: 4%;
+  }
 }
 
 @media screen and (min-width: 1024px) {
@@ -504,6 +515,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 /* Testimonials */
 
@@ -521,7 +533,7 @@ a {
   margin: 0 3rem;
 }
 
-.testimonial__image>.icon-container {
+.testimonial__image > .icon-container {
   position: absolute;
   top: 3rem;
   right: -32px;
@@ -632,7 +644,9 @@ a {
   color: #7b858b;
 }
 
-.block--dark h1, .block--dark h2, .block--dark h3 {
+.block--dark h1,
+.block--dark h2,
+.block--dark h3 {
   color: #fff;
 }
 
@@ -669,31 +683,29 @@ a {
 
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #6fcac2;
 }
 
 .nav__item:last-of-type {
   border-bottom: none;
 }
 
-.nav__item>a {
+.nav__item > a {
   color: black;
   transition: color 0.3s;
 }
 
-.nav__item>a:hover {
+.nav__item > a:hover {
   color: grey;
 }
 
 .nav__toggler {
-  opacity: 0.5;
   transition: box-shadow 0.15s;
   cursor: pointer;
 }
 
 .nav.collapsible--expanded .nav__toggler {
   opacity: 1;
-  box-shadow: 0 0 0 3px #666;
   border-radius: 5px;
 }
 
@@ -737,6 +749,7 @@ a {
 @media screen and (min-width: 1024px) {
   .hero {
     padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
@@ -808,7 +821,7 @@ a {
   .block-showcase__image {
     justify-self: end;
   }
-  .block-showcase__image>img {
+  .block-showcase__image > img {
     width: auto;
     max-width: 700px;
   }
@@ -894,4 +907,9 @@ a {
 
 .callout-signup {
   transform: translateY(5rem);
+}
+/* Media */
+.video {
+  width: 700px;
+  justify-self: end;
 }
