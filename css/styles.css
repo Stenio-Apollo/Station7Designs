@@ -1,6 +1,6 @@
 @import "./normalize.css";
 :root {
-  --color-primary: rgb(249, 247, 239);
+  --color-primary: black;
   --color-secondary: #42cbf5;
   --color-accent: #fc6f6f;
   --color-headings: rgb(98, 119, 138);
@@ -681,7 +681,7 @@ a {
 /* Navigation Bar */
 
 .nav {
-  background: rgb(255, 244, 228);
+  background:black;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -696,20 +696,20 @@ a {
 
 .nav__item {
   padding: 0.5rem 2rem;
-  border-bottom: 1px solid #6fcac2;
+  border-bottom: 0;
 }
 
 .nav__item:last-of-type {
-  border-bottom: none;
+  border-bottom: 0;
 }
 
 .nav__item > a {
-  color: black;
+  color: white;
   transition: color 0.3s;
 }
 
 .nav__item > a:hover {
-  color: grey;
+  color: rgb(77, 77, 77);
 }
 
 .nav__toggler {
@@ -744,6 +744,9 @@ a {
 }
 
 /* Hero */
+.background__img {
+background-color: rgb(249, 240, 227);
+}
 
 .hero__tagline {
   font-size: 2rem;
@@ -843,7 +846,7 @@ a {
 /* Footer */
 
 .footer {
-  background: #232323;
+  background: black;
   padding-top: 10rem;
 }
 
