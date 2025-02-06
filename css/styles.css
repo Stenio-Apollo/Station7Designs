@@ -1,7 +1,7 @@
 @import "./normalize.css";
 :root {
   --color-primary: black;
-  --color-secondary: #42cbf5;
+  --color-secondary: rgb(214, 200, 177);
   --color-accent: #fc6f6f;
   --color-headings: rgb(98, 119, 138);
   --color-body: #918ca4;
@@ -745,9 +745,11 @@ a {
 
 /* Hero */
 .background__img {
-background-color: rgb(249, 240, 227);
+background-color: var(--color-secondary);
 }
-
+.background__img2 {
+  background-color: var(--color-primary);
+}
 .hero__tagline {
   font-size: 2rem;
   color: #b9c3cf;
