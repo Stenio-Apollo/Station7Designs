@@ -259,14 +259,13 @@ a {
 }
 .btn--black {
   background: black;
-  color: #ffff ;
+  color: #ffff;
 }
 .btn--accent:hover {
   background: #ec3000;
-
 }
 .btn--black:hover {
-   background: #ec3000;
+  background: #ec3000;
 }
 
 .btn--outline {
@@ -681,7 +680,7 @@ a {
 /* Navigation Bar */
 
 .nav {
-  background:black;
+  background: black;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -745,7 +744,7 @@ a {
 
 /* Hero */
 .background__img {
-background-color: var(--color-secondary);
+  background-color: var(--color-secondary);
 }
 .background__img2 {
   background-color: var(--color-primary);
@@ -758,7 +757,7 @@ background-color: var(--color-secondary);
 }
 
 @media screen and (min-width: 768px) {
-  .hero__content {
+  .hero__content .video {
     text-align: left;
     align-self: center;
   }
