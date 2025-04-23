@@ -17,7 +17,6 @@
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  margin-top: -50px;
   position: relative;
 }
 
@@ -28,9 +27,12 @@
 }
 
 .carousel .list .item img {
-  width: 100%;
+  width: 100vw;
   height: 100%;
-  object-fit: cover ;
+  width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: top;
 }
 
 .carousel .list .item .content {
@@ -88,11 +90,17 @@
 }
 
 
+@media screen and (min-width: 1024px){ 
+  .carousel {
+    width: 100vw;
+    height: 100vh;
+  }
+  }
 /* Thumbnail */
 .thumbnail {
   position: absolute;
-  bottom: -730px;
-  left: 300px;
+  bottom: 50px;
+  left: 50%;
   width: max-content;
   z-index: 100;
   display: flex;
@@ -122,7 +130,70 @@
   font-weight: bold;
 }
 
+/* arrows */
+.arrows{
+  position: absolute;
+  top: 80%;
+  right: 52%;
+  width: 300px;
+  max-width: 30%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.arrows button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.267) ;
+  border: none;
+  font-family: monospace;
+  color: #fff;
+  font-weight: bold;
+  font-size: large;
+  transition: .5s;
+  z-index: 100;
+}
 
+.arrows button:hover{
+  background-color: #f1683a;
+  color: rgb(253, 239, 156);
+
+}
+.carousel .list .item:nth-child(1){
+  z-index: 1;
+}
+
+.carousel .list .item:nth-child(1) .author,
+.carousel .list .item:nth-child(1) .title,
+.carousel .list .item:nth-child(1) .topic,
+.carousel .list .item:nth-child(1) .desc,
+.carousel .list .item:nth-child(1) .buttons {
+  transform: translateY(50px);
+  filter: blur(20px);
+  opacity: 0;
+  animation: showContent 0.5s 1s linear 1 forwards;
+}
+@keyframes showContent{
+  to{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+
+  }
+}
+.carousel .list .item:nth-child(1) .title{
+  animation-delay: 1.2s;
+}
+.carousel .list .item:nth-child(1) .topic{
+  animation-delay: 1.4s;
+}
+.carousel .list .item:nth-child(1) .desc{
+  animation-delay: 1.6s;
+}
+.carousel .list .item:nth-child(1) .buttons{
+  animation-delay: 1.8s;
+}
 *,
 *::after,
 *::before {
