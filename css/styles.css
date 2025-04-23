@@ -11,6 +11,10 @@
   --color-content: rgb(250, 244, 235);
 }
 
+/* Glow */
+
+
+
 /* carousel */
 
 .carousel {
@@ -1004,7 +1008,8 @@ a {
 }
 
 .nav__item > a:hover {
-  color: rgb(77, 77, 77);
+  color:  #f1683a;;
+  cursor: pointer;
 }
 
 .nav__toggler {
@@ -1019,7 +1024,7 @@ a {
 
 .nav__brand {
   transform: translateY(5px);
-  width: 150px;
+  width: 77px;
 }
 
 @media screen and (min-width: 768px) {
