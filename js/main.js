@@ -17,8 +17,12 @@ nextDom.onclick = function(){
 prevDom.onclick = function () {
   showSlider("prev");
 }
-let timeRunning = 3000;
+let timeRunning = 1000;
+let timeAutoNext = 7000;
 let runTimeOut;
+let runAutoRun = setTimeout(() => {
+    nextDom.onclick();
+  }, timeAutoNext);;
 function showSlider(type){
     let itemSlider = document.querySelectorAll(".carousel .list .item");
     let itemThumbnail = document.querySelectorAll(".carousel .thumbnail .item ");
@@ -40,5 +44,9 @@ function showSlider(type){
       carouselDom.classList.remove("next");
       carouselDom.classList.remove("prev");
     }, timeRunning)
+  clearTimeout(runAutoRun);
+  runAutoRun = setTimeout(() => {
+    nextDom.onclick();
+  }, timeAutoNext);
   }
 
