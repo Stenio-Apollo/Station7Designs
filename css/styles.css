@@ -1,7 +1,8 @@
 @import "./normalize.css";
 :root {
+  
   --color-primary: black;
-  --color-secondary: rgb(214, 200, 177);
+  --color-secondary: #f1683a;;;
   --color-accent: #fc6f6f;
   --color-headings: rgb(98, 119, 138);
   --color-body: #918ca4;
@@ -420,7 +421,7 @@ a {
 
 .badge--primary {
   background: var(--color-primary);
-  color: #fff;
+  color: black;
 }
 
 .badge--secondary {
@@ -570,11 +571,11 @@ a {
 .btn--outline {
   background: #fff;
   color: var(--color-headings);
-  border: 2px solid var(--color-headings);
+  border: 2px solid var(--color-secondary);
 }
 
 .btn--outline:hover {
-  background: var(--color-headings);
+  background: var(--color-secondary);
   color: #fff;
 }
 
@@ -651,16 +652,16 @@ a {
 }
 
 .card--secondary .card__header {
-  background: var(--color-secondary);
-  color: #fff;
+  background: rgb(248, 248, 248);
+  color: black
 }
 
 .card--primary .badge--primary {
-  background: #126de4;
+  background: rgb(251, 218, 175);
 }
 
 .card--secondary .badge--secondary {
-  background: #02cdf1;
+  background: rgb(40, 40, 40);
 }
 
 /* Plans */
@@ -675,6 +676,7 @@ a {
   font-weight: 500;
   font-size: 2.4rem;
 }
+
 
 .plan__price {
   font-size: 5rem;
