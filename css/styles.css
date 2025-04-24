@@ -1,8 +1,7 @@
 @import "./normalize.css";
 :root {
-  
   --color-primary: black;
-  --color-secondary: #f1683a;;;
+  --color-secondary: #f1683a;
   --color-accent: #fc6f6f;
   --color-headings: rgb(98, 119, 138);
   --color-body: #918ca4;
@@ -10,11 +9,15 @@
   --color-border: #ccc;
   --border-radius: 30px;
   --color-content: rgb(250, 244, 235);
+  --color-apollo: #5184A8;
+
 }
 
 /* Glow */
 
-
+.night {
+  background-color: #000000;
+}
 
 /* carousel */
 
@@ -94,6 +97,7 @@
   .carousel {
     width: 100vw;
     height: 100vh;
+    margin-top: -150px;
   }
 }
 /* Thumbnail */
@@ -201,7 +205,7 @@
   left: 50%;
   bottom: 50px;
   border-radius: 20px;
-  animation: showImage .9s linear 1 forwards;
+  animation: showImage 0.9s linear 1 forwards;
 }
 @keyframes showImage {
   to {
@@ -261,7 +265,7 @@
 .carousel.prev .list .item:nth-child(2) .topic,
 .carousel.prev .list .item:nth-child(2) .desc,
 .carousel.prev .list .item:nth-child(2) .buttons {
-  animation: contentOut .5s linear 1 forwards;
+  animation: contentOut 0.5s linear 1 forwards;
 }
 @keyframes contentOut {
   to {
@@ -541,16 +545,16 @@ a {
 }
 
 .btn--primary:hover {
-  background: #3a8ffd;
+  background: var(--color-apollo);
 }
 
 .btn--secondary {
-  background: var(--color-secondary);
+  background: var(--color-apollo);
   color: #fff;
 }
 
 .btn--secondary:hover {
-  background: #05cdf0;
+  background: var(--color-primary);
 }
 
 .btn--accent {
@@ -571,7 +575,7 @@ a {
 .btn--outline {
   background: #fff;
   color: var(--color-headings);
-  border: 2px solid var(--color-secondary);
+  border: 2px solid #FDECE3;
 }
 
 .btn--outline:hover {
@@ -637,14 +641,16 @@ a {
 
 .card {
   border-radius: 7px;
-  box-shadow: 0 0 20px 10px #f3f3f3;
-  overflow: hidden;
+  box-shadow: 0 0 20px 3px #f3f3f3;
 }
 
 .card__header,
 .card__body {
   padding: 2rem 7%;
+  background-color: rgb(251, 251, 251);
+  
 }
+
 
 .card--primary .card__header {
   background: var(--color-primary);
@@ -652,8 +658,8 @@ a {
 }
 
 .card--secondary .card__header {
-  background: rgb(248, 248, 248);
-  color: black
+  background:#5184A8;
+  color: black;
 }
 
 .card--primary .badge--primary {
@@ -670,13 +676,16 @@ a {
   transition: transform 0.2s ease-out;
 }
 
+.plan .primary {
+  border-radius: 10px;
+}
+
 .plan__name {
   color: #fff;
   margin: 0;
   font-weight: 500;
   font-size: 2.4rem;
 }
-
 
 .plan__price {
   font-size: 5rem;
@@ -702,6 +711,7 @@ a {
 
 .plan--popular .card__header {
   position: relative;
+  border-radius: 10px;
 }
 
 .plan--popular .card__header::before {
@@ -937,7 +947,7 @@ a {
 
 .block {
   --padding-vertical: 5rem;
-  padding: var(--padding-vertical) 2rem;
+  padding: var(--padding-vertical) 1rem;
 }
 .block-accent {
   background-color: var(--color-content);
@@ -961,16 +971,6 @@ a {
 .block--dark h2,
 .block--dark h3 {
   color: #fff;
-}
-
-.block--skewed-right {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 95%);
-}
-
-.block--skewed-left {
-  padding-bottom: calc(var(--padding-vertical) + 4rem);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 95%, 0% 100%);
 }
 
 .container {
@@ -1010,7 +1010,7 @@ a {
 }
 
 .nav__item > a:hover {
-  color:  #f1683a;;
+  color: #f1683a;
   cursor: pointer;
 }
 
@@ -1050,7 +1050,7 @@ a {
   width: 100%;
 }
 .background__img {
-  background-color: black;
+  background-color: #000000
 }
 .background__img2 {
   background-color: var(--color-primary);
@@ -1106,7 +1106,7 @@ a {
 /* Plans Block */
 
 .block-plans .grid {
-  gap: 8rem 4rem;
+  gap: 10rem 7rem;
 }
 
 .block-plans .card {
