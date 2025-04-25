@@ -57,7 +57,7 @@
 
 .carousel .list .item .content .author {
   font-weight: bold;
-  letter-spacing: 10px;
+  letter-spacing: 7px;
 }
 
 .carousel .list .item .content .title,
@@ -77,13 +77,14 @@
   grid-template-rows: 40px;
   gap: 5px;
   margin-top: 20px;
+  
 }
 .carousel .list .item .content button {
   border: none;
   background-color: #eee;
-  letter-spacing: 3px;
-  font-family: poppins;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: 500;
+  border-radius: 14px;
 }
 
 .carousel .list .item .content button:nth-child(2) {
@@ -134,6 +135,7 @@
 }
 
 /* arrows */
+
 .arrows {
   position: absolute;
   top: 80%;
@@ -639,7 +641,7 @@ a {
 /* Cards */
 
 .card {
-  border-radius: 7px;
+  border-radius: 10px;
   box-shadow: 0 0 14px 3px var(--color-apollo);
 }
 
@@ -953,7 +955,8 @@ a {
 
 .block__header {
   text-align: center;
-  margin-bottom: 4rem;
+  margin-bottom: 13rem;
+  margin-top: 7rem;
 }
 
 .block__heading {
@@ -1298,4 +1301,7 @@ img {
 }
 video {
   border-radius: 10px;
+}
+.apimg {
+  
 }
