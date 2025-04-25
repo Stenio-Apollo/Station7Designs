@@ -10,3 +10,112 @@
             >Search
           </button>
         </div>
+
+
+        <div class="background__img">
+      <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header"></header>
+        <div class="container grid grid--1x2">
+          <picture class="block-showcase__image" data-aos="fade-up-left">
+            <source
+              type="image/webp"
+              srcset="images/Home Design Mobile.webp 1x, images/Home Design Desktp.webp 2x"
+            />
+            <source
+              type="image/png"
+              srcset="images/Home Design Mobile.png 1x, images/Home Design Desktp.png 2x"
+            />
+            <img class="Home" src="images/Home Design Desktp.jpg" alt="" />
+          </picture>
+          <ul class="list">
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#computer"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title" data-aos="fade-down">
+                    Proficient in HTML and CSS
+                  </h3>
+                  <p>
+                    Templates can either be used as is or as the foundation to
+                    your design. You are more than welcome to choose a deign and
+                    inquire/implement any design changes you see fit. we are
+                    more than happy to re customize any design layouts, fonts
+                    and color Scheme
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#growth"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title" data-aos="fade-right">
+                    Staging, GIT & WP-CLI
+                  </h3>
+                  <p>
+                    Don't know how to launch? We can assist with launching at no
+                    extra cost provided you purchase your domain name. Your
+                    domain is yours and yours alone and will be registered to
+                    you and post purchase so will your layout
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#computer"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title" data-aos="fade-up">
+                    Dynamic Caching & More
+                  </h3>
+                  <p>
+                    What is caching data and how does cache work? Caching Data
+                    or data caching is a process that stores multiple copies of
+                    data or files in a temporary storage location—or cache—so
+                    they can be accessed faster.
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+
+     <video
+            class="hero__video"
+            controls
+            muted
+            autoplay
+            loop
+            src="/videos/Station7 Vid-1.mp4"
+          >
+            "Your Browser Doesn't Support Videos'
+          </video>
+
+           <div class="night">
+      <section class="block block--dark ">
+        <div class="container">
+          <header class="block__header hero__content">
+            <h2 class="block__heading" data-aos="fade-left">
+              STATION7 DESIGNS
+            </h2>
+            <p class="hero__tagline">WE FUEL WHAT DRIVES YOU</p>
+            <a href="" class="btn btn--accent btn--stretched">Get Started</a>
+          </header>
+         
+        </div>
+      </section>
+    </div>

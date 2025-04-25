@@ -9,8 +9,7 @@
   --color-border: #ccc;
   --border-radius: 30px;
   --color-content: rgb(250, 244, 235);
-  --color-apollo: #5184A8;
-
+  --color-apollo: #5184a8;
 }
 
 /* Glow */
@@ -575,7 +574,7 @@ a {
 .btn--outline {
   background: #fff;
   color: var(--color-headings);
-  border: 2px solid #FDECE3;
+  border: 2px solid #fdece3;
 }
 
 .btn--outline:hover {
@@ -641,16 +640,14 @@ a {
 
 .card {
   border-radius: 7px;
-  box-shadow: 0 0 20px 3px #f3f3f3;
+  box-shadow: 0 0 14px 3px var(--color-apollo);
 }
 
 .card__header,
 .card__body {
   padding: 2rem 7%;
   background-color: rgb(251, 251, 251);
-  
 }
-
 
 .card--primary .card__header {
   background: var(--color-primary);
@@ -658,7 +655,7 @@ a {
 }
 
 .card--secondary .card__header {
-  background:#5184A8;
+  background: #5184a8;
   color: black;
 }
 
@@ -825,6 +822,7 @@ a {
 @media screen and (min-width: 768px) {
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
+    gap: 33px;
   }
   .Home {
     padding-right: 4%;
@@ -1050,7 +1048,7 @@ a {
   width: 100%;
 }
 .background__img {
-  background-color: #000000
+  background-color: #000000;
 }
 .background__img2 {
   background-color: var(--color-primary);
@@ -1239,4 +1237,65 @@ a {
 .video {
   width: 700px;
   justify-self: end;
+}
+
+/* Infinite loop */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  max-width: 1536px;
+  margin-inline: auto;
+  position: relative;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
+}
+
+@keyframes scrollLeft {
+  to {
+    left: -200px;
+  }
+}
+
+.itemA {
+  position: absolute;
+  left: max(calc(200px * 8), 100%);
+  animation-name: scrollLeft;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.item1 {
+  animation-delay: calc(30s / 8 * (8 - 1) * -1);
+}
+
+.item2 {
+  animation-delay: calc(30s / 8 * (8 - 2) * -1);
+}
+
+/* img & vid */
+
+.pro {
+}
+
+img {
+  border-radius: 10px;
+}
+video {
+  border-radius: 10px;
 }
