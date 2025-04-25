@@ -603,10 +603,10 @@ a {
     inset 0 0 0.75em 0.25em var(--glow-color);
 }
 .btn--accent:active {
-      box-shadow: 0 0 0.6em 0.25em var(--glow-color),
-      0 0 2.5em 2em var(--glow-spread-color),
-      inset 0 0 0.5em 0.25em var(--glow-color);
-    }
+  box-shadow: 0 0 0.6em 0.25em var(--glow-color),
+    0 0 2.5em 2em var(--glow-spread-color),
+    inset 0 0 0.5em 0.25em var(--glow-color);
+}
 .btn--black:hover {
   background: #ec3000;
 }
