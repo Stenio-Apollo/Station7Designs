@@ -99,6 +99,7 @@
     margin-top: -150px;
   }
 }
+
 /* Thumbnail */
 .thumbnail {
   position: absolute;
@@ -219,7 +220,7 @@
 .carousel.next .thumbnail .item:nth-child(1) {
   width: 0;
   overflow: hidden;
-  animation: showThumbnail 0.9s linear 1 forwards;
+  animation: showThumbnail 0.3s linear 1 forwards;
 }
 @keyframes showThumbnail {
   to {
@@ -875,6 +876,11 @@ a {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .grid--1x3x {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 /* Testimonials */
 
 .testimonial {
@@ -1018,8 +1024,11 @@ a {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1400px;
   margin: 0 auto;
+
+ 
+  
 }
 
 /* Navigation Bar */
