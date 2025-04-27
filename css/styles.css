@@ -856,6 +856,12 @@ a {
 
 /* Grids */
 
+@media screen and (min-width: 468px) {
+  .grid--1x3xx {
+    gap: 2rem;
+    padding-bottom: 77px;
+  }
+}
 .grid {
   display: grid;
 }
@@ -881,7 +887,20 @@ a {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-/* Testimonials */
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3xx {
+    grid-template-rows: repeat(1, 1fr);
+  }
+}
+
+/* about me  */
+.socials {
+  width: 100%;
+  height: 50%;
+}
+
+/*  Testimonials */
 
 .testimonial {
   padding: 3rem;
@@ -1026,9 +1045,6 @@ a {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-
- 
-  
 }
 
 /* Navigation Bar */
@@ -1353,6 +1369,17 @@ img {
 }
 video {
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 14px 3px var(--color-apollo);
+  margin-top: 90px;
+}
+@media screen and (max-width: 400px){ 
+  video{
+    width: 100vw;
+
+  };
+  
 }
 .apimg {
 }
