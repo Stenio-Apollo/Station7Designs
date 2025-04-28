@@ -681,11 +681,15 @@ a {
 
 .card {
   border-radius: 10px;
-  box-shadow: 0 0 14px 3px var(--color-apollo);
+  box-shadow: 0 0.4rem 1.4rem -0.3rem var(--color-apollo);
 }
 .card2 {
   border-radius: 10px;
-  box-shadow: 0 0.7rem 1rem -0.25rem var(--color-apollo);
+  box-shadow: 0 0.3rem 1.5rem -0.6rem var(--color-apollo);
+}
+.card3 {
+  border-radius: 10px;
+  box-shadow: 0 1.3rem 3rem -0.35rem var(--color-apollo);
 }
 
 .card__header,
@@ -753,7 +757,6 @@ a {
 
 .plan--popular .card__header {
   position: relative;
-  border-radius: 10px;
 }
 
 .plan--popular .card__header::before {
@@ -863,8 +866,8 @@ a {
 
 @media screen and (min-width: 468px) {
   .grid--1x3xx {
-    gap: 2rem;
-    padding-bottom: 77px;
+    
+    padding-bottom: 120px;
   }
 }
 .grid {
@@ -1333,7 +1336,7 @@ a {
   padding: 1rem;
   background: #000000;
   border-radius: 10px;
-  box-shadow:  0 0.7rem 1rem -0.25rem var(--color-apollo);
+  box-shadow: 0 0.7rem 1rem -0.25rem var(--color-apollo);
   color: #fff;
 }
 .scroller {
@@ -1383,10 +1386,11 @@ a {
 
 img {
   border-radius: 10px;
+  box-shadow: 0.7rem 1rem -0.25rem var(--color-apollo);
 }
 video {
   border-radius: 10px;
   width: 96%;
-  box-shadow: 0 0 14px 3px var(--color-apollo);
+  box-shadow: 0 0.5rem 1.5rem -0.6rem var(--color-apollo);
   margin-top: 50px;
 }
