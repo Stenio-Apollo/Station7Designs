@@ -1325,7 +1325,6 @@ a {
 }
 .scroller {
   max-width: 600px;
-  outline: 3px solid lime;
 }
 
 .scroller__inner {
@@ -1333,6 +1332,22 @@ a {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+}
+.scroller[data-animated="true"] {
+  overflow: hidden;
+
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated="true"] .scroller__inner {
+  flex-wrap: nowrap;
 }
 /* img & vid */
 
