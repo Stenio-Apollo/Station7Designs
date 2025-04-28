@@ -1334,6 +1334,7 @@ a {
   gap: 1rem;
 }
 .scroller[data-animated="true"] {
+  border: 5px solid lightseagreen;
   overflow: hidden;
 
   -webkit-mask: linear-gradient(
@@ -1347,7 +1348,16 @@ a {
 }
 
 .scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
   flex-wrap: nowrap;
+  animation: scroll 40s linear infinite;
+}
+
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - .5rem));
+  }
 }
 /* img & vid */
 
