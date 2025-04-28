@@ -17,7 +17,6 @@
 .night {
   background-color: #000000;
 }
-
 /* carousel */
 
 .carousel {
@@ -866,7 +865,6 @@ a {
 
 @media screen and (min-width: 468px) {
   .grid--1x3xx {
-    
     padding-bottom: 120px;
   }
 }
