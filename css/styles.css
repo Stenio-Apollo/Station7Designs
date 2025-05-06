@@ -1382,6 +1382,11 @@ a {
 
 /* img & vid */
 
+.img3 {
+  width: 33px;
+  flex-wrap: wrap;
+}
+
 img {
   border-radius: 10px;
   box-shadow: 0.7rem 1rem -0.25rem var(--color-apollo);
@@ -1391,4 +1396,21 @@ video {
   width: 96%;
   box-shadow: 0 0.5rem 1.5rem -0.6rem var(--color-apollo);
   margin-top: 50px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: white;
+}
+.logos-slide {
+  white-space: nowrap;
+}
+
+.logos-slide img {
+  height: 33px;
+  flex-wrap: nowrap;
 }
